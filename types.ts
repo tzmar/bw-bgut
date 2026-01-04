@@ -31,11 +31,18 @@ export interface BudgetLimit {
   limit: number;
 }
 
+export interface ExchangeRates {
+  BWP: number;
+  ZAR: number;
+  USD: number;
+}
+
 export interface AppData {
   transactions: Transaction[];
   goals: SavingsGoal[];
   limits: BudgetLimit[];
   theme: 'light' | 'dark' | 'pula';
+  exchangeRates: ExchangeRates;
 }
 
 export enum Currency {

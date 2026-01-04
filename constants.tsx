@@ -15,7 +15,7 @@ import {
   Coffee,
   HelpCircle
 } from 'lucide-react';
-import { Category } from './types';
+import { Category, ExchangeRates } from './types';
 
 export const THEME_COLORS = {
   pula: {
@@ -77,7 +77,8 @@ export const getIcon = (iconName: string, size = 20) => {
   }
 };
 
-export const EXCHANGE_RATES: Record<string, number> = {
+// Fix: Change type to ExchangeRates to resolve type mismatch errors in App.tsx
+export const EXCHANGE_RATES: ExchangeRates = {
   BWP: 1,
   ZAR: 0.72,
   USD: 13.55

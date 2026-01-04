@@ -1,0 +1,11 @@
+
+{
+  "appId": "com.pulabudget.app",
+  "appName": "PulaBudget",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "allowNavigation": []
+  }
+}
